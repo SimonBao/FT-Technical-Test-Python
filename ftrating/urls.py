@@ -14,5 +14,6 @@ from rating import views
 
 urlpatterns = [
     url(r'^$', views.HomeView.as_view(), name="index"),
+    url(r'^rating/new$', 'ftrating.views.get_rating', name='home'),
     url(r'^admin/', include(admin.site.urls)),
 ]

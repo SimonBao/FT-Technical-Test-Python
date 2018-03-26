@@ -25,7 +25,8 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = [
-'django-env2.tgtbwrby3n.eu-west-2.elasticbeanstalk.com'
+'django-env2.tgtbwrby3n.eu-west-2.elasticbeanstalk.com',
+'localhost'
 ]
 
 

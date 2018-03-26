@@ -1,4 +1,21 @@
-{% extends 'base.html' %}
-
-{% block content %}
-{% endblock content %}
+{%load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financial Times</title>
+    <link rel="stylesheet" href="{% static "css/foundation.css" %}">
+</head>
+<body>
+  <section class="row">
+    <header class="large-12 columns">
+      <h1> Please leave a rating </h1>
+      <form action="/rating/new" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit" />
+      </form>
+      <hr>
+    </header>
+  </section>
+</body>
+</html>

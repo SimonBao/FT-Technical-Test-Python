@@ -9,6 +9,11 @@
   <section class="row">
     <header class="large-12 columns">
       <h1> Please leave a rating </h1>
+      <form action="/rating/new" method="post">
+    {% csrf_token %}
+    Name: <input type="text" name="rating" /><br />
+   <input type="submit" value="Submit" />
+ </form>
       <hr>
     </header>
   </section>
